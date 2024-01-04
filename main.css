@@ -84,6 +84,38 @@ div {
     margin: inherit;
     padding: 1em 1em 1em;
 }
+.tabs-nest {
+    margin: 0;
+    width: auto;
+    background-color: white;
+}
+.tabs-nest div {
+    display: none;
+}
+.tabs-nest:hover div {
+    display: block;
+}
+.filter {
+    width: 100%;
+}
+.filter ul {
+    list-style-type: none;
+    display: flex;
+    /* align-items: stretch;
+    justify-content: space-between; */
+    overflow: hidden;
+    margin: auto;
+    padding: 1em 0em 1em;
+    font-weight: bold;
+}
+.filter li {
+    display: block;
+    float: left;
+    padding: 0 1em 0;
+}
+/* .filter div {
+    padding: 0;
+} */
 .drinks-container {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
