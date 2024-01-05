@@ -1,5 +1,5 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: azure;
 }
 body {
@@ -23,7 +23,7 @@ img {
     padding-bottom: 0em;
     /* border-radius: 3px; */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 h1 {
     margin: 1vh;
@@ -56,11 +56,66 @@ h1 {
 }
 div {
     background-color: rgba(0,20,26, 1);
-    width: 70%;
+    width: 75%;
     margin: auto;
-    padding: 1%;
+    /* padding: 1%; */
     border: 1px solid black;
 }
+#sorters {
+    width: 75%;
+    padding: 0;
+    margin-top: 1em;
+}
+.tabs {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.tabs li {
+    float: left;
+    margin: None;
+}
+.tabs li > div {
+    display: block;
+    text-align: center;
+    width: 5em;
+    margin: inherit;
+    padding: 1em 1em 1em;
+}
+.tabs-nest {
+    margin: 0;
+    width: auto;
+    background-color: white;
+}
+.tabs-nest div {
+    display: none;
+}
+.tabs-nest:hover div {
+    display: block;
+}
+.filter {
+    width: 100%;
+}
+.filter ul {
+    list-style-type: none;
+    display: flex;
+    /* align-items: stretch;
+    justify-content: space-between; */
+    overflow: hidden;
+    margin: auto;
+    padding: 1em 0em 1em;
+    font-weight: bold;
+}
+.filter li {
+    display: block;
+    float: left;
+    padding: 0 1em 0;
+}
+/* .filter div {
+    padding: 0;
+} */
 .drinks-container {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
