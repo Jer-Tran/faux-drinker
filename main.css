@@ -55,7 +55,7 @@ h1 {
     /* align-self: left; */
 }
 div {
-    background-color: rgba(0,20,26, 1);
+    background-color: rgb(12, 25, 37);
     width: 75%;
     margin: auto;
     /* padding: 1%; */
@@ -121,7 +121,7 @@ div {
     grid-template-columns: 25% 25% 25% 25%;
 }
 .drink {
-    background-color: rgb(4, 47, 54);
+    background-color: rgb(61, 82, 93);
     padding: 5%;
     height: 85%;
 }
@@ -130,4 +130,6 @@ div {
     height: 50px;
     display: flex;
     float: right;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
