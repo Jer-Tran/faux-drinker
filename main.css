@@ -55,10 +55,8 @@ h1 {
     /* align-self: left; */
 }
 div {
-    background-color: rgb(12, 25, 37);
-    width: 75%;
+    background-color: rgb(20, 28, 35);
     margin: auto;
-    /* padding: 1%; */
     border: 1px solid black;
 }
 #sorters {
@@ -117,19 +115,42 @@ div {
     padding: 0;
 } */
 .drinks-container {
+    width: 75%;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1em;
+    padding: 1em 0 1em;
 }
 .drink {
+    margin: 0 0.5em 0;
+    display: inline-block;
     background-color: rgb(61, 82, 93);
-    padding: 5%;
-    height: 85%;
+    border-radius: 5px;
 }
-.drink > img {
-    width: auto;
-    height: 50px;
+/* .drink:hover {
+    width: 150%;
+} */
+.drink * {
+    margin: 0;
+    background-color: inherit;
+    border: none;
+}
+.drink div {
+    display: block;
+}
+.drink-img {
+    width: 30%;
+    display: flex;
+    float: left;
+    border-radius: 2px;
+}
+.drink-img img {
+    background-color: rgba(0,0,0,0.1);
+}
+.drink-title {
+    width: 70%;
     display: flex;
     float: right;
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 5px;
+    text-align: center;
+    overflow: ellipsis;
 }
