@@ -129,7 +129,7 @@ div {
     display: inline-block;
     background-color: rgb(61, 82, 93);
     border-radius: 5px;
-    min-height: 4em;
+    height: 6em;
     overflow: hidden;
 }
 .drink:hover {
@@ -141,7 +141,7 @@ div {
     border: none;
 }
 .drink-cover {
-    display: block;
+    display: flex;
 }
 .drink-img {
     width: 30%;
@@ -150,20 +150,26 @@ div {
     border-radius: 2px;
 }
 .drink-img img {
-    background-color: rgba(0,0,0,0.1);
+    object-fit: cover;
 }
 .drink-title {
     width: 70%;
+    height: 6em;
+    float: right;
     display: flex;
     flex-direction: column;
-    float: right;
     text-align: center;
     overflow: ellipsis;
 }
-.drink-title p {
-    font-size: small;
+.drink-title h3 {
+    margin-top: 2%;
 }
-.drink .drink-desc {
+.drink-title p {
+    margin: 1em;
+    font-size: small;
+    overflow: ellipsis;
+}
+.drink-desc {
     display: none;
 }
 .drink:hover > .drink-desc {
